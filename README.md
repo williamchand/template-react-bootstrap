@@ -1,9 +1,41 @@
+# React Bootstrap Plate
+React Bootstrap Plate is example of integration react with bootstrap.
+
+## Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+`npx create-react-app react-bootstrap-plate`
 
-In the project directory, you can run:
+## React Router
+Declarative routing for React using [React Router](https://reactrouter.com/)
 
+`yarn add react-router react-router-dom`
+
+## React Bootstrap
+React-Bootstrap replaces the Bootstrap JavaScript. Each component has been built from scratch as a true React component, without unneeded dependencies like jQuery.
+Installing [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction) dependency to the project.
+
+`yarn add react-bootstrap bootstrap react-router-bootstrap`
+
+## Tutorial
+
+### Add browser router to src/index.js
+[BrowserRouter](https://reactrouter.com/web/api/BrowserRouter) HTML5 history API (pushState, replaceState and the popstate event) to keep your UI in sync with the URL.
+```
+import {BrowserRouter as Router} from 'react-router-dom';
+..........
+<React.StrictMode>
+  <Router>
+    <App />
+  </Router>
+</React.StrictMode>
+```
+
+### Add PWA functionality 
+You want your app to work offline and load faster using [PWA](https://bit.ly/CRA-PWA)
+```
+serviceWorker.register();
+```
 ### `yarn start`
 
 Runs the app in the development mode.<br />
