@@ -1,17 +1,36 @@
-# React Bootstrap Plate
+# React Bootstrap Plate Movie List
 React Bootstrap Plate is example of integration react with bootstrap.
 
-## Create React App
+## Overview
+In this tutorial, we will create web application that show the movie list using OMDb API.
+The app will able to receive search input and respond search input with showing list of 
+movies. The key things we will explore is how to:
+- Create single page application.
+- Create multi language page.
+- Interaction between react with API.
+
+## Prerequisites
+- Download and install Node at v8.10+, npm at v5.6+ and Yarn at v1.2.0+.
+- Download and install JDK.
+- Download and install Visual Studio Code
+- Create Netlify Account
+
+### Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 `npx create-react-app react-bootstrap-plate`
 
-## React Router
+### React-i18next
+[React-i18next](https://react.i18next.com/) is a powerful internationalization framework for React / React Native which is based on i18next.
+
+`yarn add react-i18next i18next i18next-http-backend i18next-browser-languagedetector`
+
+### React Router
 Declarative routing for React using [React Router](https://reactrouter.com/)
 
 `yarn add react-router react-router-dom`
 
-## React Bootstrap
+### React Bootstrap
 React-Bootstrap replaces the Bootstrap JavaScript. Each component has been built from scratch as a true React component, without unneeded dependencies like jQuery.
 Installing [React Bootstrap](https://react-bootstrap.github.io/getting-started/introduction) dependency to the project.
 
@@ -49,52 +68,6 @@ You will also see any lint errors in the console.
 Launches the test runner in the interactive watch mode.<br />
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
 ### Deployment
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
