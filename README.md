@@ -10,9 +10,9 @@ Pada tutorial kali ini, kita akan membuat aplikasi web yang menampilkan daftar f
 ## Prasyarat
 - Unduh dan instal Node v8.10+, npm v5.6+ and Yarn v1.2.0+.
 - Unduh dan instal JDK.
-- Unduh dan instal Visual Studio Code
-- Membuat akun github
-- Membuat akun netlify
+- Unduh dan instal Visual Studio Code.
+- Membuat akun github.
+- Membuat akun netlify.
 
 ### Create React App
 Project ini menggunakan dasar dari [Create React App](https://github.com/facebook/create-react-app).
@@ -25,7 +25,7 @@ Project ini menggunakan dasar dari [Create React App](https://github.com/faceboo
 `yarn add react-i18next i18next i18next-http-backend i18next-browser-languagedetector`
 
 ### React Router
-Perutean URL deklaratif menggunakan [React Router](https://reactrouter.com/)
+Perutean URL deklaratif menggunakan [React Router](https://reactrouter.com/).
 
 `yarn add react-router react-router-dom`
 
@@ -50,10 +50,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 ```
 
 ### Aset gambar foto profil
-Menambahkan aset gambar foto profil pada public/assets/creators.jpg
+Menambahkan aset gambar foto profil pada public/assets/creators.jpg.
 
 ### Mengkonfigurasi internasionalisasi
-Mengkonfigurasi [i18n](https://react.i18next.com/latest/using-with-hooks) dengan file src/i18n.js dengan konten
+Mengkonfigurasi [i18n](https://react.i18next.com/latest/using-with-hooks) dengan file src/i18n.js dengan konten.
 ```
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
@@ -74,10 +74,10 @@ i18n.use(Backend)
 
 export default i18n;
 ```
-Menambahkan file tersebut ke aplikasi melalui src/index.js `import './i18n';`
+Menambahkan file tersebut ke aplikasi melalui src/index.js `import './i18n';`.
 
 ### Koleksi translasi bahasa 
-Menempatkan aset koleksi translasi bahasa pada public/locales/{language_code}/translation.json
+Menempatkan aset koleksi translasi bahasa pada public/locales/{language_code}/translation.json.
 Versi bahasa
 ```
 {
@@ -117,10 +117,10 @@ Versi inggris
 
 ### Memindahkan file App.* ke folder components
 Memindahkan file App.* ke folder components.
-Pada src/index.js mengganti sumber impor file `import App from './components/App';`
+Pada src/index.js mengganti sumber impor file `import App from './components/App';`.
 
 ### Inisialisasi App.js
-Menginisialisasi file App.js dengan internasionalisasi dan router
+Menginisialisasi file App.js dengan internasionalisasi dan router.
 ```
 import React, { Suspense } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -148,7 +148,7 @@ export default App;
 ```
 
 ### Navigasi aplikasi
-Menambahkan Fitur [navigasi](https://react-bootstrap.github.io/components/navs/) pada aplikasi melalui src/components/header/index.js
+Menambahkan Fitur [navigasi](https://react-bootstrap.github.io/components/navs/) pada aplikasi melalui src/components/header/index.js.
 ```
 import React from 'react';
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
@@ -176,7 +176,7 @@ function Header() {
 
 export default Header;
 ```
-Mengimpor header melalui src/components/App.js
+Mengimpor header melalui src/components/App.js.
 ```
 import Header from './header';
 ...................
@@ -187,7 +187,7 @@ import Header from './header';
 ```
 
 ### Memilih bahasa melalui navigasi
-Memilih bahasa dengan menggunakan dropdown bootstrap pada navigasi src/components/header/index.js
+Memilih bahasa dengan menggunakan dropdown bootstrap pada navigasi src/components/header/index.js.
 ```
 ...................
   const { t, i18n } = useTranslation();
@@ -209,7 +209,7 @@ Memilih bahasa dengan menggunakan dropdown bootstrap pada navigasi src/component
 
 export default Header;
 ```
-Beserta file pada navigasi src/components/header/index.css
+Beserta file pada navigasi src/components/header/index.css.
 ```
 .language > a {
   color: #FFFFFF;
@@ -217,7 +217,7 @@ Beserta file pada navigasi src/components/header/index.css
 ```
 
 ### Konten aplikasi
-Menambahkan konten pada tiap rute URL pada aplikasi melalui src/components/content/index.js
+Menambahkan konten pada tiap rute URL pada aplikasi melalui src/components/content/index.js.
 ```
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
@@ -239,7 +239,7 @@ export default Content;
 ```
 
 ### Menambahkan halaman rumah
-Menambahkan halaman rumah memuat profil diri menggunakan [kartu](https://react-bootstrap.github.io/components/cards/) src/components/component/home/index.js
+Menambahkan halaman rumah memuat profil diri menggunakan [kartu](https://react-bootstrap.github.io/components/cards/) src/components/component/home/index.js.
 ```
 import React from 'react';
 import { Card } from 'react-bootstrap';
@@ -265,7 +265,7 @@ function HomePage() {
 
 export default HomePage;
 ```
-Mengimpor halaman rumah pada src/components/content/index.js
+Mengimpor halaman rumah pada src/components/content/index.js.
 ```
 import HomePage from '../component/home';
 ...................
@@ -275,7 +275,7 @@ import HomePage from '../component/home';
 ```
 
 ### Membuat konteks pencarian
-Membuat [konteks](https://reactjs.org/docs/context.html) pencarian src/context/search/reducer.js
+Membuat [konteks](https://reactjs.org/docs/context.html) pencarian src/context/search/reducer.js.
 ```
 const cases = {
   MOVIE_VALUE: (state, payload) => ({
@@ -290,7 +290,7 @@ const reducer = (state, action) => {
 
 export default reducer;
 ```
-Memanggilnya pada src/context/search/index.js
+Memanggilnya pada src/context/search/index.js.
 ```
 import React, { createContext, useReducer } from 'react';
 import { node } from 'prop-types';
@@ -313,7 +313,7 @@ SearchProvider.propTypes = {
 ```
 
 ### Komponen input search
-Membangun komponen untuk melakukan input search dengan [useState](https://reactjs.org/docs/hooks-state.html) dan [grup input](https://react-bootstrap.github.io/components/input-group/) bootstrap src/components/component/search/search.js
+Membangun komponen untuk melakukan input search dengan [useState](https://reactjs.org/docs/hooks-state.html) dan [grup input](https://react-bootstrap.github.io/components/input-group/) bootstrap src/components/component/search/search.js.
 ```
 import React, { useContext, useState } from 'react';
 
@@ -359,7 +359,7 @@ export default SearchView;
 
 ### Komponen output search
 Membangun komponen untuk menampilkan output search dengan [useEffect](https://reactjs.org/docs/hooks-effect.html) dan [fetch](https://reactjs.org/docs/faq-ajax.html) 
-api src/components/component/search/movie.js
+api src/components/component/search/movie.js.
 ```
 import React, { useContext, useEffect, useState } from 'react';
 
@@ -410,9 +410,9 @@ function MovieView() {
 
 export default MovieView;
 ```
-Anda perlu mengganti apikey dan i dari https://www.omdbapi.com/?i=null&apikey=null
+Anda perlu mengganti apikey dan i dari https://www.omdbapi.com/?i=null&apikey=null.
 ### Menambahkan halaman pencarian
-Menambahkan halaman pencarian beserta komponennya pada rute URL src/components/component/search/index.js
+Menambahkan halaman pencarian beserta komponennya pada rute URL src/components/component/search/index.js.
 ```
 import React from 'react';
 
@@ -431,7 +431,7 @@ function SearchPage() {
 
 export default SearchPage;
 ```
-Mengimpor halaman pencarian pada src/components/content/index.js
+Mengimpor halaman pencarian pada src/components/content/index.js.
 ```
 import SearchPage from '../component/search';
 ...................
@@ -441,11 +441,11 @@ import SearchPage from '../component/search';
 ```
 
 ### Menonaktifkan debug mode pada React-i18next
-Menonaktifkan debug mode pada React-i18next dengan mengubah konfigurasi src/i18n.js
+Menonaktifkan debug mode pada React-i18next dengan mengubah konfigurasi src/i18n.js.
 `debug: false`
 
 ### Fungsionalitas PWA 
-Jika ingin agar aplikasi bekerja offline dan lebih cepat memuat halaman tambahkan [PWA](https://bit.ly/CRA-PWA) di file src/index.js ubah menjadi `serviceWorker.register();`
+Jika ingin agar aplikasi bekerja offline dan lebih cepat memuat halaman tambahkan [PWA](https://bit.ly/CRA-PWA) di file src/index.js ubah menjadi `serviceWorker.register();`.
 
 ### `yarn start`
 Menjalankan aplikasi pada mode pengembangan.<br />
@@ -454,10 +454,10 @@ halaman memuat ulang saat melakukan edit.<br />
 kamu juga dapat melihat error pada konsol.
 
 ### Penyebaran
-Pada penyebaran aplikasi akan digunakan kerangka dari [netlify](https://www.netlify.com/)
-- Login ke akun netlify
-- Klik new site from github
-- Sambungkan dengan akun github
-- Pilih repository yang ingin disebarkan
-- Setting build command `yarn build` dan publish directory `build/`
-- Akses situs contoh pada [https://awesome-brattain-372325.netlify.app/home](https://awesome-brattain-372325.netlify.app/home)
+Pada penyebaran aplikasi akan digunakan kerangka dari [netlify](https://www.netlify.com/).
+- Login ke akun netlify.
+- Klik new site from github.
+- Sambungkan dengan akun github.
+- Pilih repository yang ingin disebarkan.
+- Setting build command `yarn build` dan publish directory `build/`.
+- Akses situs contoh pada [https://awesome-brattain-372325.netlify.app/home](https://awesome-brattain-372325.netlify.app/home).
