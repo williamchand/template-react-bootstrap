@@ -442,8 +442,7 @@ import SearchPage from '../component/search';
 ```
 
 ### Menonaktifkan debug mode pada React-i18next
-Menonaktifkan debug mode pada React-i18next dengan mengubah konfigurasi src/i18n.js.
-`debug: false`
+Menonaktifkan debug mode pada React-i18next dengan mengubah konfigurasi src/i18n.js `debug: false`.
 
 ### Fungsionalitas PWA 
 Jika ingin agar aplikasi bekerja offline dan lebih cepat memuat halaman tambahkan [PWA](https://bit.ly/CRA-PWA) di file src/index.js ubah menjadi `serviceWorker.register();`.
