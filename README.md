@@ -1,4 +1,4 @@
-# Template React Bootstrap 
+# Template React Bootstrap [![Netlify Status](https://api.netlify.com/api/v1/badges/c87ca310-3b6e-4786-8746-d8219bd2cc6f/deploy-status)](https://app.netlify.com/sites/awesome-brattain-372325/deploys)
 Template React Bootstrap adalah contoh integrasi react dengan bootstrap.
 
 ## Gambaran
@@ -459,4 +459,5 @@ Pada penyebaran aplikasi akan digunakan kerangka dari [netlify](https://www.netl
 - Klik new site from github
 - Sambungkan dengan akun github
 - Pilih repository yang ingin disebarkan
-- setting build command `yarn build` dan publish directory `build/`
+- Setting build command `yarn build` dan publish directory `build/`
+- Akses situs contoh pada [https://awesome-brattain-372325.netlify.app/home](https://awesome-brattain-372325.netlify.app/home)
