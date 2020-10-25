@@ -78,6 +78,7 @@ Menambahkan file tersebut ke aplikasi melalui src/index.js `import './i18n';`.
 
 ### Koleksi translasi bahasa 
 Menempatkan aset koleksi translasi bahasa pada public/locales/{language_code}/translation.json.
+
 Versi bahasa
 ```
 {
