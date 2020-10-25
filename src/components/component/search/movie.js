@@ -9,7 +9,7 @@ function MovieView() {
   useEffect(() => {
     setMovie({});
     if(search.movie){
-      fetch('http://www.omdbapi.com/?i=tt3896198&apikey=1a9ae8c0&t='+search.movie.toLowerCase()).then(res=> res.json())
+      fetch('https://www.omdbapi.com/?i=tt3896198&apikey=1a9ae8c0&t='+search.movie.toLowerCase()).then(res=> res.json())
         .then(response => setMovie(response))
         .catch(()=>{
           setMovie({});

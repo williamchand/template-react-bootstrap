@@ -11,12 +11,13 @@ Pada tutorial kali ini, kita akan membuat aplikasi web yang menampilkan daftar f
 - Unduh dan instal Node v8.10+, npm v5.6+ and Yarn v1.2.0+.
 - Unduh dan instal JDK.
 - Unduh dan instal Visual Studio Code
+- Membuat akun github
 - Membuat akun netlify
 
 ### Create React App
 Project ini menggunakan dasar dari [Create React App](https://github.com/facebook/create-react-app).
 
-`npx create-react-app react-bootstrap-plate`
+`npx create-react-app template-react-bootstrap`
 
 ### React-i18next
 [React-i18next](https://react.i18next.com/) adalah kerangka internasionalisasi bahasa yang terbaik untuk React / React Native yang didasarkan pada i18next.
@@ -357,7 +358,8 @@ export default SearchView;
 ```
 
 ### Komponen output search
-Membangun komponen untuk menampilkan output search dengan [useEffect](https://reactjs.org/docs/hooks-effect.html) dan [fetch](https://reactjs.org/docs/faq-ajax.html) bootstrap src/components/component/search/movie.js
+Membangun komponen untuk menampilkan output search dengan [useEffect](https://reactjs.org/docs/hooks-effect.html) dan [fetch](https://reactjs.org/docs/faq-ajax.html) 
+api src/components/component/search/movie.js
 ```
 import React, { useContext, useEffect, useState } from 'react';
 
@@ -370,7 +372,7 @@ function MovieView() {
   useEffect(() => {
     setMovie({});
     if(search.movie){
-      fetch('http://www.omdbapi.com/?i=tt3896198&apikey=1a9ae8c0&t='+search.movie.toLowerCase()).then(res=> res.json())
+      fetch('https://www.omdbapi.com/?i=null&apikey=null&t='+search.movie.toLowerCase()).then(res=> res.json())
         .then(response => setMovie(response))
         .catch(()=>{
           setMovie({});
@@ -408,7 +410,7 @@ function MovieView() {
 
 export default MovieView;
 ```
-
+Anda perlu mengganti apikey dan i dari https://www.omdbapi.com/?i=null&apikey=null
 ### Menambahkan halaman pencarian
 Menambahkan halaman pencarian beserta komponennya pada rute URL src/components/component/search/index.js
 ```
@@ -453,3 +455,8 @@ kamu juga dapat melihat error pada konsol.
 
 ### Penyebaran
 Pada penyebaran aplikasi akan digunakan kerangka dari [netlify](https://www.netlify.com/)
+- Login ke akun netlify
+- Klik new site from github
+- Sambungkan dengan akun github
+- Pilih repository yang ingin disebarkan
+- setting build command `yarn build` dan publish directory `build/`
