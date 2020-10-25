@@ -1,5 +1,5 @@
 # Template React Bootstrap [![Netlify Status](https://api.netlify.com/api/v1/badges/c87ca310-3b6e-4786-8746-d8219bd2cc6f/deploy-status)](https://app.netlify.com/sites/awesome-brattain-372325/deploys)
-Template React Bootstrap adalah contoh integrasi react dengan bootstrap.
+Template React Bootstrap adalah suatu kerangka kerja integrasi react dengan Bootstrap untuk membantu pemula mulai mempelajari aplikasi web melalui tutorial paling dasar.
 
 ## Gambaran
 Pada tutorial kali ini, kita akan membuat aplikasi web yang menampilkan daftar film menggunakan API OMDb. Aplikasi ini akan dapat menerima input kata kunci dan merespon dengan menampilkan daftar film. Hal utama yang akan kita jelajahi adalah bagaimana caranya:
