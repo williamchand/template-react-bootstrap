@@ -1,0 +1,15 @@
+{
+	"header": {
+    "logo": "React Bootstrap",
+    "home": "Home",
+    "search": "Search"
+	},
+	"homePage": {
+		"title": "Creators info",
+		"description": "Hello, I am William as the react bootstrap template creator. I hope the code I created will help people get started working with React."
+	},
+	"searchPage": {
+		"search": "Search",
+		"placeHolder": "Movie's name"
+	}
+}

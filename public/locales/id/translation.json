@@ -1,0 +1,15 @@
+{
+	"header": {
+    "logo": "React Bootstrap",
+    "home": "Rumah",
+    "search": "Pencarian"
+	},
+	"homePage": {
+		"title": "Info kreator",
+		"description": "Halo, perkenalkan aku william sebagai pembuat template react bootstrap. Aku berharap kode yang telah dibuat dapat membantu orang-orang memulai bekerja dengan react."
+	},
+	"searchPage": {
+    "search": "Cari",
+		"placeHolder": "Nama film"
+	}
+}
