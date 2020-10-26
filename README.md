@@ -2,7 +2,7 @@
 Template React Bootstrap adalah suatu kerangka kerja integrasi react dengan Bootstrap untuk membantu pemula mulai mempelajari aplikasi web melalui tutorial paling dasar.
 
 ## Gambaran
-Pada tutorial kali ini, kita akan membuat aplikasi web yang menampilkan daftar film menggunakan API OMDb. Aplikasi ini akan dapat menerima input kata kunci dan merespon dengan menampilkan daftar film. Hal utama yang akan kita jelajahi adalah bagaimana caranya:
+Pada tutorial kali ini, kita akan membuat aplikasi web yang menampilkan daftar film menggunakan API OMDb. Aplikasi ini akan dapat menerima input kata kunci dan  merespon dengan menampilkan film yang sesuai dengan kata kunci. Hal utama yang akan kita jelajahi adalah bagaimana caranya:
 - Membuat aplikasi satu halaman.
 - Membuat halaman banyak bahasa.
 - Interaksi antara react dengan API.
