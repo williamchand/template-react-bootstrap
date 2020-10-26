@@ -12,7 +12,7 @@ function SearchView() {
     searchDispatch({ type: 'MOVIE_VALUE', payload: movieName})
   }
   const handleKeyPress = (target) => {
-    if(target.charCode===13){
+    if(target.charCode === 13){
       searchInput();    
     } 
   }

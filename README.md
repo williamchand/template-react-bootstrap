@@ -365,25 +365,32 @@ api src/components/component/search/movie.js.
 import React, { useContext, useEffect, useState } from 'react';
 
 import { SearchContext } from '../../../context/search';
-import { Card, Alert, Row, Col } from 'react-bootstrap';
+import { Card, Alert, Row, Col, Spinner } from 'react-bootstrap';
 
 function MovieView() {
   const [search] = useContext(SearchContext);
   const [movie, setMovie] = useState({});
+  const [isLoading, setLoading] = useState(false);
   useEffect(() => {
     setMovie({});
     if(search.movie){
-      fetch('https://www.omdbapi.com/?i=null&apikey=null&t='+search.movie.toLowerCase()).then(res=> res.json())
-        .then(response => setMovie(response))
+      setLoading(true);
+      fetch('https://www.omdbapi.com/?i=tt3896198&apikey=1a9ae8c0&t='+search.movie.toLowerCase()).then(res=> res.json())
+        .then(response => {
+          setLoading(false);
+          setMovie(response);
+        })
         .catch(()=>{
+          setLoading(false);
           setMovie({});
         });
     }
-  },[search, setMovie]);
-
+  },[search, setMovie, setLoading]);
+  
   return (
     <Row>
       <Col md={{ span: 4, offset: 4 }}>
+        {isLoading && (<div className="mt-5 d-flex justify-content-center"><Spinner animation="grow" /></div>)}
         {movie.Response === "True" && (
           <Card>
             {movie.Poster !== "N/A" && (
