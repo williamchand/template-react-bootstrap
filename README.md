@@ -467,4 +467,4 @@ Pada penyebaran aplikasi akan digunakan kerangka dari [netlify](https://www.netl
 - Sambungkan dengan akun github.
 - Pilih repository yang ingin disebarkan.
 - Setting build command `yarn build` dan publish directory `build/`.
-- Akses situs contoh pada [https://awesome-brattain-372325.netlify.app/home](https://awesome-brattain-372325.netlify.app/home).
+- Akses situs contoh pada [https://awesome-brattain-372325.netlify.app/](https://awesome-brattain-372325.netlify.app/).
